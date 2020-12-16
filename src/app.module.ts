@@ -9,7 +9,12 @@ import { GraphQLGatewayModule } from '@nestjs/graphql';
         cors: true,
       },
       gateway: {
-        serviceList: [],
+        serviceList: [
+          {
+            name: 'lists',
+            url: 'http://localhost:3001/graphql',
+          },
+        ],
       },
     }),
   ],
