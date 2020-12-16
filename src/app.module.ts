@@ -14,6 +14,10 @@ import { GraphQLGatewayModule } from '@nestjs/graphql';
             name: 'lists', // <= not really sure how this is used
             url: 'http://localhost:3001/graphql',
           },
+          {
+            name: 'todos',
+            url: 'http://localhost:3002/graphql',
+          },
         ],
       },
     }),
